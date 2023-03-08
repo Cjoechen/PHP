@@ -1,0 +1,46 @@
+<HTML>
+    <head>
+        <title>資管系系烤表單</title>
+        <meta charset="UTF-8">
+        <body bgcolor="#D8E2DC">
+            <center><b><h1>高大資管系系烤報名</h1></b></center>
+            <center><img src="https://heho.com.tw/wp-content/uploads/2018/09/%E7%83%A4%E8%82%89.jpg" width="350"></center><br/>
+            
+            <h3>相關事項：</h2>
+            <table border="1" bgcolor="#F2FFFF">
+                <tr><td>時間</td><td>3/22 17：00</td></tr>
+                <tr><td>地點</td><td>宿舍烤肉區</td></tr>
+                <tr><td>費用</td>
+                    <td>
+                        <ul>
+                            <li>有繳交系費：$100 &nbsp
+                            <li>未繳交系費：$150 &nbsp
+                        </ul>
+                    </td>
+            </table>
+            
+            <hr color="#000000">
+
+            <h3>資料填寫：</h3>
+            <form action="HW3_result.php" method="post">
+                <ol>
+                    <li>學號：<input type="text" name="id" required><br/>
+                    <li>姓名：<input type="text" name="name" required><br/>
+                    <li>是否參加：<input type="radio" name="join" value="yes" required>是<input type="radio" name="join" value="no" required>否<br/>
+                    <li>是否繳交系費：<input type="radio" name="money" value="yes">是<input type="radio" name="money" value="no">否<br/>
+                    <li>葷食或是素食：<select name="eat">
+                                    <option value="meat">葷食
+                                    <option value="vegetable">素食
+                                    </select>
+                    <li>請輸入手機號碼：<input type="text" name="phone"><br/>
+
+                    <li>備註：<br/><textarea name="comment" cols="30" rows="5"></textarea><br/>
+                
+                </ol>
+                
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </body>
+    </head>
+</HTML>
